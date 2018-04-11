@@ -41,3 +41,37 @@ h3{
 .Rectangle-12 {
     background-color: #4a90e2;
 }
+
+.SubirFoto {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    line-height: normal;
+    font-size: 100%;
+    margin:0;
+}
+
+.Tomar-foto {
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    display: inline-block;
+    color: #4a4a4a;
+    padding-left: 32px;
+  }
+  
+  .camera {
+    color: #4a4a4a;
+    margin-left: 20px;
+  }
+
+
