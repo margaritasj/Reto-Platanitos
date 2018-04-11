@@ -37,7 +37,28 @@ h3{
     height: 50px;
     border-radius: 2px;
     background-color: #55b849;
+    color: #fff;
 }
 .Rectangle-12 {
     background-color: #4a90e2;
+    color: #fff;
+}
+.favoritos {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.favoritos p {
+  /*font-family: OpenSans;*/
+  font-weight: 600;
+  font-size: 15px;
+  color: #ecba16;
+  text-align: center;
+}
+.cont-icon {
+    margin-left: 5%;
+}
+.cont-icon {
+    padding-right: 0px;
+}
+.item-ico {
 }
