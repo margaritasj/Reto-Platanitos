@@ -59,10 +59,16 @@
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                            ...
+                            
+                            <div id="Selector">
+                                <input type="file" name="foto" id="foto" class="SubirFoto" accept="image/*" capture="camera" />
+                                <label for="foto"><figure><i class="camera fas fa-camera"></i><h6 class="Tomar-foto">Tomar una foto</h6></figure></label>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                <!-- Modal para la Camara -->
             </div>
             <div class="row">
                 <div class="col-6 col-sm-6">
@@ -134,6 +140,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="vendors/js/jquery-3.2.1.min.js"></script>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    
     <script src="js/app.js"></script>
 </body>
 </html>
