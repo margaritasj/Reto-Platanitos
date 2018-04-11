@@ -17,8 +17,8 @@
                   <img src="assets/img/ico-medio.png"  alt="icon">
                 </a>
             </div>
-            <div class="col-4 col-sm-4 col-md-6">
-                <img class="logo" src="assets/logo/platanito-logo.png" alt="platanito">
+            <div class="col-6 col-sm-4 col-md-6">
+                <img class="logo" src="assets/img/platanitos.png" alt="platanito">
             </div>
             <div class="col-2 col-sm-2"> 
                 <img src="assets/img/search.png" alt="search">
@@ -28,6 +28,7 @@
             </div>
         </div>
       </div>
+      <hr>
     </header>
     <main >
         <div class="container" >
@@ -59,16 +60,25 @@
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
+                           
+                            
+                            
                             <div>
-                                    
-                                    <input type="file" id="files" class="SubirFoto" value="Comparte fotos">
-                                    <label for=""><i class="camera fas fa-images"></i><h6 class="Tomar-foto">Subir de galería</h6></label> 
+                                <input type="file" name="foto" id="foto" class="SubirFoto" accept="image/*" capture="camera" />
+                                <label for="foto"><figure><i class="camera fas fa-camera"></i><h6 class="Tomar-foto">Tomar una foto</h6></figure></label>
+                            </div>
+                            <div id="files">
+                                    <i class="camera fas fa-images"></i>
+                                   
+                                    <input type="file" name="foto"  class="btn-subir" value="Subir de galería" accept="image/*">
+                                    <!-- <label for="foto"><figure></figure></label>  -->
 
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
+                <!-- Modal para la Camara -->
             </div>
             <div class="row">
                 <div class="col-6 col-sm-6">
@@ -83,11 +93,26 @@
             <div class="row">
                 <button type="button" class="btn Rectangle-9 boton ">Envío Gratis a todo el Perú</button><br/>
                 <button type="button" class="btn Rectangle-10 boton ">Envío Gratis a todo el Perú</button><br/>
-                <button type="button" class="btn Rectangle-11 boton ">Envío Gratis a todo el Perú</button><br/>
-                <button type="button" class="btn Rectangle-12 boton " data-toggle="modal" data-target=".bd-example-modal-lg">SUBIR FOTO Y COMPARTIR</button><br/>
-
+                <button type="button" class="btn Rectangle-11 boton ">AGREGAR A MI CARRITO</button><br/>
+                <button type="button" class="btn Rectangle-12 boton ">SUBIR FOTO Y COMPARTIR</button><br/>
             </div>
+            
+                <div class=" favoritos">
+                    <p>AGREGAR A FAVORITOS</p>
+                </div>
+                <div class="row">    
+                <div class="cont-icon">
+                    <a href="#" class="col-2 "><img class="item-ico" src="assets/img/fac-1.png" alt="facebook"></a>
+                    <a href="#" class="col-2 "><img class="item-ico" src="assets/img/twi-1.png" alt="twiter"></a>
+                    <a href="#" class="col-2 "><img class="item-ico" src="assets/img/pint-1.png" alt="pinterest"></a>
+                    <a href="#" class="col-2 "><img class="item-ico" src="assets/img/message-1.png" alt="message"></a>
+                    <a href="#" class="col-2 "><img class="item-ico" src="assets/img/correo-1.png" alt="correo"></a>
+                </div>
+            </div>
+            
+
         </div>
+
         
         
     </main>
@@ -128,6 +153,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="vendors/js/jquery-3.2.1.min.js"></script>
     <script src="js/subirFoto.js"></script>
+    
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,9 +1,7 @@
 .logo {
-    width: 220px;
-    height: 100px;
+    width: 100%;
 }
 header {
-    outline: 1px solid black;
     padding: 2%;
     height: 120px;;
 }
@@ -35,7 +33,73 @@ h3{
     height: 50px;
     border-radius: 2px;
     background-color: #55b849;
+    color: #fff;
 }
 .Rectangle-12 {
     background-color: #4a90e2;
+    color: #fff;
 }
+.favoritos {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.favoritos p {
+  /*font-family: OpenSans;*/
+  font-weight: 600;
+  font-size: 15px;
+  color: #ecba16;
+  text-align: center;
+}
+.cont-icon {
+    margin-left: 5%;
+}
+.cont-icon {
+    padding-right: 0px;
+}
+.item-ico {
+}
+
+.SubirFoto {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    line-height: normal;
+    font-size: 100%;
+    margin:0;
+}
+.btn-subir {
+    outline: none;
+    background-color:transparent!important;
+    color:transparent;
+}
+
+.fa-images{
+    position: absolute;
+    background: #fff;
+
+}
+
+.Tomar-foto {
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    display: inline-block;
+    color: #4a4a4a;
+    padding-left: 32px;
+  }
+  
+  .camera {
+    color: #4a4a4a;
+    margin-left: 20px;
+  }
+
+
