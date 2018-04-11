@@ -59,7 +59,13 @@
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                            ...
+                            <div>
+                                    
+                                    <input type="file" id="files" class="SubirFoto" value="Comparte fotos">
+                                    <label for=""><i class="camera fas fa-images"></i><h6 class="Tomar-foto">Subir de galería</h6></label> 
+
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -78,13 +84,14 @@
                 <button type="button" class="btn Rectangle-9 boton ">Envío Gratis a todo el Perú</button><br/>
                 <button type="button" class="btn Rectangle-10 boton ">Envío Gratis a todo el Perú</button><br/>
                 <button type="button" class="btn Rectangle-11 boton ">Envío Gratis a todo el Perú</button><br/>
-                <button type="button" class="btn Rectangle-12 boton ">Envío Gratis a todo el Perú</button><br/>
+                <button type="button" class="btn Rectangle-12 boton " data-toggle="modal" data-target=".bd-example-modal-lg">SUBIR FOTO Y COMPARTIR</button><br/>
 
             </div>
         </div>
         
         
     </main>
+    <output id="list"></output>
 
     
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -116,9 +123,11 @@
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="vendors/js/jquery-3.2.1.min.js"></script>
+    <script src="js/subirFoto.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
