@@ -1,11 +1,9 @@
 
 
 .logo {
-    width: 220px;
-    height: 100px;
+    width: 100%;
 }
 header {
-    outline: 1px solid black;
     padding: 2%;
     height: 120px;;
 }
