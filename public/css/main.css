@@ -374,3 +374,17 @@ input[type="file"] {
   text-align: left;
   color: rgba(0, 0, 0, 0.38);
 }
+
+/*--- ARREGLOS EN EL MODAL ---*/
+
+.modal-content {
+  position: fixe;
+  top: 450px;
+   
+}
+
+.photo, .h6 {
+  display: inline-block;
+}
+
+/*----- FIN DE MODOL --*/
