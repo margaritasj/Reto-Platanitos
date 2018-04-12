@@ -1,0 +1,63 @@
+
+
+/* figure { 
+    outline: 1px solid red;
+    padding: 5%;
+}*/
+.platanitos {
+    padding: 10%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+figure img {
+    width: 100%;
+}
+.imagen img {
+    width: 100%;
+
+}
+.imagen {
+    padding-top: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    
+}
+.contenedor-logueo {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding-bottom: 4%;
+    margin-bottom: 6%;
+}
+input {
+    font-size: 20px;
+    border:2px solid #dddddd;
+}
+.cont-input {
+    margin-top: 3.5%;
+}
+.cont-input span {
+    font-weight: 650;
+}
+.boton {
+        width: 100%;
+        background-color: #58b849;
+        color: #fff;
+        font-size: 20px;
+}
+.cont-boton {
+    margin-top: 3%;
+}
+.contenedor-cuenta {
+    margin-top: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.gren {
+    color: #58b849;
+    text-align: right;
+   
+}
+h2 {
+    font-weight: 650;
+    margin-bottom: 8%;
+}
