@@ -42,7 +42,7 @@
       document.getElementById("modal-aceptar").style.display = 'none';
       document.getElementById("modal-comentario").style.display = 'none';
       document.getElementById("modal-subio").style.display = 'block';
-      var uploadTask = storageRef.child(image.name).put(image)
+      var uploadTask = storageRef.child(textArea).put(image)
       uploadTask.on('state_changed',
         function (snapshot) {},
         function (error) {
@@ -50,7 +50,7 @@
         },
         function () {
           var downloadURL = uploadTask.snapshot.downloadURL;
-          createNode(image.name, downloadURL);
+          createNode(textArea, downloadURL);
         });
     });
 
@@ -87,6 +87,7 @@
       document.getElementById("modal-photo").style.display = 'block';
       document.getElementById("modal-aceptar").style.display = 'none';
       document.getElementById("modal-subio").style.display = 'none';
+
     });
   }
 
