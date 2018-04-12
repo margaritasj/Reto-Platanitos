@@ -38,7 +38,7 @@ nav {
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #343434;
+	color: #343434;
 }
 
 .h4 {
@@ -52,8 +52,6 @@ nav {
   letter-spacing: normal;
   text-align: left;
 	color: #7e7e7e;
-	margin: 0;
-	padding: 0;
 }
 
 .span {
@@ -70,20 +68,42 @@ nav {
 	margin: 0;
 }
 
-.zapatilla {
-	width: 100%;
-	padding: 8%;
+.des-span {
+	width: 110px;
+  height: 14px;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-align: right;
+  color: #7e7e7e;
+}
+
+
+.price {
+	width: 79px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #55b849;
 }
 
 .item {
 	width: 100%;
 }
 
-.Rectangle-9 {
+.rectangle-9 {
 	border: solid 2px #55b849;
 }
 
-.Rectangle-10 {
+.rectangle-10 {
 	border: solid 1px #d2d2d2;
 }
 
@@ -95,7 +115,7 @@ nav {
 	margin-bottom: 1.5%;
 }
 
-.Rectangle-11 {
+.rectangle-11 {
 	width: 100%;
 	height: 50px;
 	border-radius: 2px;
@@ -103,18 +123,17 @@ nav {
 	color: #fff;
 }
 
-.Rectangle-12 {
+.rectangle-12 {
 	background-color: #4a90e2;
 	color: #fff;
 }
 
-.favoritos {
+.favorite {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-.favoritos p {
-	/*font-family: OpenSans;*/
+.favorite p {
 	font-weight: 600;
 	font-size: 15px;
 	color: #ecba16;
@@ -122,16 +141,25 @@ nav {
 }
 
 .cont-icon {
-	margin-left: 5%;
+  margin-left: 5%;
+  padding-right: 0px;
 }
 
-.cont-icon {
-	padding-right: 0px;
+.h6 {
+  height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  display: inline-block;
+  color: #4a4a4a;
+  padding-left: 32px;
 }
 
-.item-ico {}
-
-
+/*///////////////////////////////////////*/
 
 .SubirFoto {
 	width: 0.1px;
@@ -145,20 +173,7 @@ nav {
 	margin: 0;
 }
 
-.Tomar-foto {
-    height: 24px;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    display: inline-block;
-    color: #4a4a4a;
-    padding-left: 32px;
-  }
+
   
   .camera {
     color: #4a4a4a;
@@ -243,4 +258,7 @@ nav {
 }
 
 
+#modal-aceptar {
+  display: none;
+}
 
