@@ -14,7 +14,7 @@
 
 <body>
 	<header>
-		<nav class="fixed">
+		<nav class="">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-2 col-sm-2 col-md-2">
@@ -33,7 +33,7 @@
 			</div>
 		</nav>
 	</header>
-	<section>
+	<section class="">
 		<div class="container">
 			<div class="row">
 				<div class="col-7">
@@ -114,42 +114,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-6 col-sm-6">
-						<span>Talla</span>
-						<br>
-						<h4>Seleccione</h4>
-					</div>
-					<div class="col-6 col-sm-6">
-						<span>Color</span>
-						<h4>Negro/Azul</h4>
-					</div>
-				</div>
 			</div>
-	</section>
-	<br>
-	<section>
-		<div class="container">
 			<div class="row">
-				<div class="col-4">
-					<output id="list"></output>
+				<div class="col-6 col-sm-6">
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Talla</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Seleccione</option>
+								<option>37</option>
+								<option>38</option>
+								<option>39</option>
+								<option>40</option>
+								<option>41</option>
+								<option>42</option>
+							</select>
+						</div>
+					</form>
 				</div>
-
-			</div>
-		</div>
-		<br>
-	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<button type="button" class="btn Rectangle-9 boton">Envío Gratis a todo el Perú</button>
-				</div>
-				<div class="col-12">
-					<button type="button" class="btn Rectangle-9 boton ">Recógelo de tienda gratis</button>
-				</div>
-				<div class="col-12">
-					<button type="button" class="btn Rectangle-11 boton ">AGREGAR A MI CARRITO</button>
+				<div class="col-6 col-sm-6">
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Color</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option>Seleccione</option>
+								<option>Negro/Azul</option>
+								<option>Azul/Gris</option>
+								<option>Rojo/Negro</option>
+							</select>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -158,7 +152,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class=" favoritos">
+					<button type="button" class="btn rectangle-9 boton">Envío Gratis a todo el Perú</button>
+				</div>
+				<div class="col-12">
+					<button type="button" class="btn rectangle-9 boton ">Recógelo de tienda gratis</button>
+				</div>
+				<div class="col-12">
+					<button type="button" class="btn rectangle-11 boton ">AGREGAR A MI CARRITO</button>
+				</div>
+				<div class="col-12">
+					<button type="button" class="btn rectangle-12 boton ">SUBIR FOTO Y COMPARTIR</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="favorite">
 						<p>AGREGAR A FAVORITOS</p>
 					</div>
 				</div>
@@ -189,6 +201,15 @@
 					<a href="#">
 						<img class="item-ico" src="assets/img/correo-1.png" alt="facebook">
 					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row p-2">
+				<div class="col-6">
+					<output id="list"></output>
 				</div>
 			</div>
 		</div>

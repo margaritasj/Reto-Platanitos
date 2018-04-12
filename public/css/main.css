@@ -99,11 +99,11 @@ nav {
 	width: 100%;
 }
 
-.Rectangle-9 {
+.rectangle-9 {
 	border: solid 2px #55b849;
 }
 
-.Rectangle-10 {
+.rectangle-10 {
 	border: solid 1px #d2d2d2;
 }
 
@@ -115,7 +115,7 @@ nav {
 	margin-bottom: 1.5%;
 }
 
-.Rectangle-11 {
+.rectangle-11 {
 	width: 100%;
 	height: 50px;
 	border-radius: 2px;
@@ -123,18 +123,17 @@ nav {
 	color: #fff;
 }
 
-.Rectangle-12 {
+.rectangle-12 {
 	background-color: #4a90e2;
 	color: #fff;
 }
 
-.favoritos {
+.favorite {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
-.favoritos p {
-	/*font-family: OpenSans;*/
+.favorite p {
 	font-weight: 600;
 	font-size: 15px;
 	color: #ecba16;
@@ -142,16 +141,12 @@ nav {
 }
 
 .cont-icon {
-	margin-left: 5%;
+  margin-left: 5%;
+  padding-right: 0px;
 }
 
-.cont-icon {
-	padding-right: 0px;
-}
 
-.item-ico {}
-
-
+/*///////////////////////////////////////*/
 
 .SubirFoto {
 	width: 0.1px;
