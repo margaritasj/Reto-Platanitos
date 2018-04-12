@@ -352,6 +352,12 @@ input[type="file"] {
   border-bottom: 2px solid #55b849;
   margin-bottom: 56.9px;
 }
+/*-- BOTON MODAL LOGUIN --*/
+
+.boton {
+  background: #55b849;
+  color: #fff;
+}
 
 .textArea {
   outline: none;
