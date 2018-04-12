@@ -96,7 +96,7 @@
       var datos = snapshot.val();
        var result = "";
       for (var key in datos) {
-        result += ' <button type="button" data-toggle="modal" data-url="'+datos[key].url+'"  class=" bg-white"><img class="" src="' + datos[key].url + '"/> <p class="font-italic">"'+datos[key].nombre+'"</p> </button>';
+        result += ' <button type="button" data-toggle="modal" data-url="'+datos[key].url+'"  class=" bg-white"><img class="" src="' + datos[key].url + '"/> <p class="font-italic fs-10">"'+datos[key].nombre+'"</p> </button>';
       }
       document.getElementById('list').innerHTML = result;    
       
