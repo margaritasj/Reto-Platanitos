@@ -388,3 +388,9 @@ input[type="file"] {
 }
 
 /*----- FIN DE MODOL --*/
+.img-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
