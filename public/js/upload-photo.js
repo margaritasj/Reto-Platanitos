@@ -48,12 +48,13 @@
       // console.log(datos)
       var result = "";
       for (var key in datos) {
-        result += '<img class="img-output img-thumbnail"src="' + datos[key].url + '"/>';
+      result += '<li><img class="img-output img-thumbnail"src="' + datos[key].url + '"/></li>';
       }
       document.getElementById('list').innerHTML = result;
     })
 
   }
+  
 
 
   function createNode(nameImage, url) {
@@ -63,6 +64,8 @@
     });
 
   }
+
+      
 })()
 
 
