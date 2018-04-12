@@ -8,7 +8,7 @@
           var reader = new FileReader();
           reader.onload = (function(theFile) {
             return function(e) {
-              document.getElementById("modal-fotos").style.display ='none';
+              document.getElementById("modal-photo").style.display ='none';
               document.getElementById("modal-aceptar").style.display ='block';
 
               document.getElementById("aceptar").addEventListener("click", Aceptar);
@@ -22,7 +22,7 @@
               document.getElementById("cancelar").addEventListener("click", Cerrar);
 
               function Cerrar () {
-                document.getElementById("modal-fotos").style.display ='block';
+                document.getElementById("modal-photo").style.display ='block';
               document.getElementById("modal-aceptar").style.display ='none';
                 
               }
