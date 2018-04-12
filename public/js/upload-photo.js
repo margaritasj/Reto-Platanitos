@@ -1,4 +1,5 @@
 (function () {
+  
   var config = {
     apiKey: "AIzaSyCLoNdkDeyiO09zyiEpvVOubXExNSE-A5Y",
     authDomain: "platanitos-e4b00.firebaseapp.com",
