@@ -83,7 +83,7 @@
 											<label for="foto"><figure><i class="camera fas fa-camera"></i><h6 class="Tomar-foto">Tomar una foto</h6></figure></label> -->
 											
 									</div>
-									<div>
+									<div id="modal-fotos">
 													<input type="file" id="files"/>
 													<div>
 													<label for="foto"><figure><i class="camera fas fa-image"></i><h6 class="Tomar-foto">Tomar foto</h6></figure></label>
@@ -91,7 +91,24 @@
 												<div>
 													<label for="foto"><figure><i class="camera fas fa-image"></i><h6 class="Tomar-foto">Subir de galería</h6></figure></label>
 												</div>
-											</div>
+									</div>
+									<div id="modal-aceptar">
+
+											<div class="modal-header">
+													<h5 class="modal-title">Compartir foto</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p>Desea subir la foto seleccionada</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" id="aceptar">Aceptar</button>
+													<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelar" >Cancelar</button>
+												</div>
+
+									</div>
 
 							</div>
 					</div>

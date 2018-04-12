@@ -8,8 +8,30 @@
           var reader = new FileReader();
           reader.onload = (function(theFile) {
             return function(e) {
+              document.getElementById("modal-fotos").style.display ='none';
+              document.getElementById("modal-aceptar").style.display ='block';
+
+              document.getElementById("aceptar").addEventListener("click", Aceptar);
+
+              function Aceptar () {
+                
+                document.getElementById("list").innerHTML = ['<img class="img-output" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+              }
+
+              document.getElementById("close").addEventListener("click", Cerrar);
+              document.getElementById("cancelar").addEventListener("click", Cerrar);
+
+              function Cerrar () {
+                document.getElementById("modal-fotos").style.display ='block';
+              document.getElementById("modal-aceptar").style.display ='none';
+                
+              }
+
+              document.getElementById("cancelar").addEventListener("click", Cerrar);
+
+             
         // Creamos la imagen.
-              document.getElementById("list").innerHTML = ['<img class="img-output" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+              
             };
           })(f);
           reader.readAsDataURL(f);
