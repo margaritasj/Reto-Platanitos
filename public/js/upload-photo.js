@@ -86,8 +86,7 @@
   function showImages() {
     imagesReference.on('value', function (snapshot) {
       var datos = snapshot.val();
-      // console.log(datos)
-      var result = "";
+       var result = "";
       for (var key in datos) {
         result += ' <button type="button" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/> </button>';
       }

@@ -15,55 +15,62 @@
 </head>
 
 <body>
-  <header>
-    <nav class="">
+    <!-- ustify-content-between -->
+    <nav class="border-bottom position-fixed bg-white w-100">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-2 col-sm-2 col-md-2">
+        <div class="row justify-content-between bar-menu" style='height:59px'>
+          <div class="">
             <img class="icon-nav" src="assets/img/ico-medio.png" alt="icon">
           </div>
-          <div class="col-6 col-sm-6 col-md-6">
+          <div class=" text-center">
             <img class="platanitoscom-logotipo" src="assets/img/platanitos.png" alt="platanito">
           </div>
-          <div class="col-2 col-sm-2 col-md-2">
-            <img class="icon-list" src="assets/img/search.png" alt="search">
-          </div>
-          <div class="col-2 col-sm-2 col-md-2">
+          <div class="icons ">
+            <img class="icon-list mr-3" src="assets/img/search.png" alt="search">
             <img class="icon-list" src="assets/img/carrito.png" alt="carrito">
           </div>
+          <!-- <div class="col-2 col-sm-2 col-md-2">
+            
+          </div> -->
         </div>
       </div>
     </nav>
-  </header>
-  <section class="">
-    <div class="container">
+  
+  <section class="section-images ">
+    <div class="container mt-2">
       <div class="row">
         <div class="col-7">
-          <h3 class="h3">Under Armour</h3>
-          <h4 class="h4">Ua Micro G Limitless Tr</h4>
-          <span class="span">SkU:71534</span>
+          <p class="mb-0 pb-0 font-weight-bold fs-14">Under Armour</p>
+          <p class="mb-0 pb-0 fs-13">Ua Micro G Limitless Tr</p>
+          <p class="mb-0 pb-0 fs-12 font-weight-600">SkU:71534</p>
         </div>
-        <div class="col-5">
-          <span class="des-span">(16% Dcto. de S/189.00)</span>
-          <h3 class="price">S/159.00</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class=" cont-img col-12 col-sm-12">
-          <img class="p-4  img-fluid" src="https://d13xymm0hzzbsd.cloudfront.net/2/20170928/15066128041280.jpg" alt="zapatilla">
+        <div class="col-5 text-right">
+          <p class="fs-10 mb-0">(16% Dcto. de S/189.00)</p>
+          <p class="fs-18 mb-0 text-green font-weight-bold">S/159.00</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-7 col-sm-7"></div>
-        <div class="col-2 col-sm-2">
-          <img class="item" src="assets/img/grabar.png" alt="grabar">
+        <div class="col-12 col-sm-12 text-center">
+          <img class="img-fluid image-product" src="https://d13xymm0hzzbsd.cloudfront.net/2/20170928/15066128041280.jpg" alt="zapatilla">
         </div>
-        <div class="col-3 col-sm-3">
+      </div>
+      <div class="row mb-2">
+        <div class="col-7 col-sm-7 d-flex justify-content-around align-items-center">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle "></div>
+        </div>
+     
+        <div class="col-5 col-sm-5 d-flex justify-content-around align-items-center">
+            <img class="item" src="assets/img/grabar.png" alt="grabar">
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          <button type="button button-modal" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             <img class="item" data-toggle="modal" id="" src="assets/img/photo-camera@3x.png" alt="camara">
           </button>
-
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -153,7 +160,7 @@
         <div class="col-6 col-sm-6">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Talla</label>
+              <label for="exampleFormControlSelect1" class="text-gray fs-12">Talla</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>Seleccione</option>
                 <option>37</option>
@@ -169,7 +176,7 @@
         <div class="col-6 col-sm-6">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Color</label>
+              <label for="exampleFormControlSelect1" class="text-gray fs-12">Color</label>
               <select class="form-control" id="exampleFormControlSelect1">
                 <option>Seleccione</option>
                 <option>Negro/Azul</option>
@@ -186,16 +193,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <button type="button" class="btn rectangle-9 boton">Envío Gratis a todo el Perú</button>
-        </div>
-        <div class="col-12">
-          <button type="button" class="btn rectangle-9 boton ">Recógelo de tienda gratis</button>
-        </div>
-        <div class="col-12">
-          <button type="button" class="btn rectangle-11 boton ">AGREGAR A MI CARRITO</button>
-        </div>
-        <div class="col-12">
-          <button type="button" class="btn rectangle-12 boton ">SUBIR FOTO Y COMPARTIR</button>
+          <button type="button" class=" bg-white btn-lg btn-block fs-18 mb-3 border-green btn-style">Envío Gratis a todo el Perú</button>
+       
+          <button type="button" class="bg-white btn-lg btn-block fs-18 border border-secondary mb-3 btn-style">Recógelo de tienda gratis</button>
+        
+          <button type="button" class="bg-green btn-lg btn-block fs-16 text-white font-weight-bold  mb-3 border btn-style">AGREGAR A MI CARRITO</button>
+       
+          <button type="button" class="btn-primary btn-lg btn-block fs-16 font-weight-bold border btn-style">SUBIR FOTO Y COMPARTIR</button>
         </div>
       </div>
     </div>
@@ -204,9 +208,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="favorite">
-            <p>AGREGAR A FAVORITOS</p>
-          </div>
+        
+            <p class="fs-15 text-orange text-center m-3 font-weight-bold">AGREGAR A FAVORITOS</p>
+
         </div>
 
       </div>
