@@ -323,6 +323,10 @@ input[type="file"] {
   }
 }
 
+#modal-photo {
+  display: none;
+}
+
 #modal-aceptar {
   display: none;
 }
