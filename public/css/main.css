@@ -309,6 +309,10 @@ input[type="file"] {
   75% {margin-left: -300%;}
   100% {margin-left: -300%;}
 }
+
+#modal-aceptar {
+  display: none;
+}
 #modal-comentario {
   display: none;
 }
