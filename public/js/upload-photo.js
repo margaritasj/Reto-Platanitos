@@ -1,4 +1,5 @@
 (function () {
+  
   var config = {
     apiKey: "AIzaSyCLoNdkDeyiO09zyiEpvVOubXExNSE-A5Y",
     authDomain: "platanitos-e4b00.firebaseapp.com",
@@ -15,15 +16,19 @@
   // imagenesFBRef
 
   function initialize() {
+    
     fileImage = document.getElementById('files');
     fileImage.addEventListener('change', uploadImage, false);
     storageRef = firebase.storage().ref().child('imagenes');
     imagesReference = firebase.database().ref().child('imagenes')
     showImages();
+    
   }
 
   function uploadImage() {
+    
     var image = fileImage.files[0];
+    document.getElementById("modal-login").style.display = 'none';
     document.getElementById("modal-photo").style.display = 'none';
     document.getElementById("modal-aceptar").style.display = 'block';
     document.getElementById("modal-comentario").style.display = 'none';
@@ -48,6 +53,8 @@
           createNode(image.name, downloadURL);
         });
     });
+
+    
 
     document.getElementById("aceptar").addEventListener("click", function () {
       var datotext = localStorage.getItem("text");
@@ -107,7 +114,12 @@
 })()
 
 
-
+document.getElementById("mostrar").addEventListener("click", function () {
+  console.log('probando submit');
+  
+  document.getElementById("modal-login").style.display = 'none';
+  document.getElementById("modal-photo").style.display = 'block';
+});
 
 
     

@@ -323,6 +323,10 @@ input[type="file"] {
   }
 }
 
+#modal-photo {
+  display: none;
+}
+
 #modal-aceptar {
   display: none;
 }
@@ -379,7 +383,7 @@ input[type="file"] {
 
 .modal-content {
   position: fixe;
-  top: 250px;
+  top: 50px;
    
 }
 
