@@ -1,6 +1,6 @@
 $(function () {
   /* Al presionar tecla del email cambia de carita - cambia de imagen */
-  $('#email').on('keydown', function () {
+  $('#email').on('keyup', function () {
     var email = $('#email');
     switch (true) {
       case email.val().length === 0:
@@ -8,45 +8,38 @@ $(function () {
           .attr('src', '../assets/img-logueo/a-1.png');
         console.log(email.val());
         break;
-      case email.val().length < 3:
+      case email.val().length === 1:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-2.png');
         console.log(email.val());
         break;
-      case email.val().length < 6:
+      case email.val().length < 4:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-3.png');
-        // mostrarImag(); 
         break;
-      case email.val().length < 9:
+      case email.val().length < 8:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-4.png');
-        // mostrarImag(); 
         break;
       case email.val().length < 12:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-5.png');
-        // mostrarImag(); 
         break;
-      case email.val().length < 15:
+      case email.val().length < 16:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-6.png');
-        // mostrarImag();
         break;
-      case email.val().length < 18:
+      case email.val().length < 20:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-7.png');
-        // mostrarImag();/a-8.png
         break;
-      case email.val().length < 21:
+      case email.val().length < 24:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-8.png');
-        // mostrarImag();
         break;
-      case email.val().length < 25:
+      case email.val().length < 28:
         $('.avatar-platanitos')
           .attr('src', '../assets/img-logueo/a-9.png');
-        // mostrarImag();
         break;
       default:
         $('.avatar-platanitos')
@@ -62,11 +55,9 @@ $(function () {
   });
 
   /* Al realizar click al input password - mantiene una imagen */
-  $('#password').on('click', function () {
+  $('#password').on('focus', function () {
     var password = $('#password');
-    password.focus(function () {
-      $('.avatar-platanitos').attr('src', '../assets/img-logueo/a-13.png');
-    })
+    $('.avatar-platanitos').attr('src', '../assets/img-logueo/a-13.png');
     if (password.val().length >= 0) {
       $('.avatar-platanitos').attr('src', '../assets/img-logueo/a-13.png');
     }

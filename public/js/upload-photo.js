@@ -38,8 +38,6 @@
           createNode(image.name, downloadURL);
         });
     });
-
-
   }
 
   function showImages() {
@@ -54,7 +52,6 @@
     })
 
   }
-
 
   function createNode(nameImage, url) {
     imagesReference.push({
