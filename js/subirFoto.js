@@ -15,7 +15,7 @@
 
               function Aceptar () {
                 
-                document.getElementById("list").innerHTML = ['<img class="img-output" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                document.getElementById("list").innerHTML = ['<img class="img-output img-thumbnail" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
               }
 
               document.getElementById("close").addEventListener("click", Cerrar);
