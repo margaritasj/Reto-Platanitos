@@ -96,11 +96,13 @@
       var datos = snapshot.val();
        var result = "";
       for (var key in datos) {
-        result += ' <button type="button" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/> </button>';
+        result += ' <button type="button" data-toggle="modal" data-url="'+datos[key].url+'"  class=" bg-white"><img class="" src="' + datos[key].url + '"/> <p class="font-italic">"'+datos[key].nombre+'"</p> </button>';
       }
       document.getElementById('list').innerHTML = result;    
+      
     })   
   }
+
   
 
   function createNode(nameImage, url) {
