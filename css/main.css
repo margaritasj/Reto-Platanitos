@@ -70,17 +70,6 @@ h3{
     font-size: 100%;
     margin:0;
 }
-.btn-subir {
-    outline: none;
-    background-color:transparent!important;
-    color:transparent;
-}
-
-.fa-images{
-    position: absolute;
-    background: #fff;
-
-}
 
 .Tomar-foto {
     height: 24px;
@@ -102,4 +91,12 @@ h3{
     margin-left: 20px;
   }
 
-
+ 
+  input[type="file"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
