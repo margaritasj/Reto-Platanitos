@@ -67,7 +67,6 @@
 }
 
 .btn-style {
-  /* border-style: none; */
   border-radius: 0;
   padding: 2vh 0;
 }
@@ -78,7 +77,7 @@
 
 nav {
   height: 60px;
-  z-index: 10000;
+  z-index: 10;
 }
 
 .image-product {
@@ -94,6 +93,8 @@ nav {
   display: inline-block;
 }
 
+/* Iconos */
+
 .icon-nav {
   width: 34px;
   height: 34px;
@@ -107,66 +108,15 @@ nav {
   object-fit: contain;
 }
 
+/**/
+
 .platanitoscom-logotipo {
   width: 132px;
   height: 32px;
   object-fit: contain;
 }
 
-/* .h3 {
-  width: 101px;
-  height: 19px;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
-} */
-
-/* .h4 {
-  width: 145px;
-  height: 18px;
-  font-size: 13px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #7e7e7e;
-}
-
-.span {
-  width: 64px;
-  height: 17px;
-  font-size: 12px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #353535;
-  margin: 0;
-} */
-
-/* .des-span {
-  width: 110px;
-  height: 14px;
-  font-size: 10px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -0.2px;
-  text-align: right;
-  color: #7e7e7e;
-} */
-
-.price {
+/* .price {
   width: 79px;
   height: 24px;
   font-size: 18px;
@@ -177,7 +127,7 @@ nav {
   letter-spacing: normal;
   text-align: right;
   color: #55b849;
-}
+} */
 
 .item {
   width: 31px;
@@ -262,38 +212,39 @@ nav {
 /*///////////////////////////////////////*/
 
 .SubirFoto {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-	line-height: normal;
-	font-size: 100%;
-	margin: 0;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  line-height: normal;
+  font-size: 100%;
+  margin: 0;
 }
 
 .camera {
-    color: #4a4a4a;
-    margin-left: 20px;
+  color: #4a4a4a;
+  margin-left: 20px;
 }
 
-  input[type="file"] {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-  }
+input[type="file"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 
-  /* .img-output{
+/* .img-output{
      width: 100px;
      height: 100px;
   } */
 
-  /* slider estilos */
-.slider{
+/* slider estilos */
+
+.slider {
   width: 100%;
   overflow: hidden;
   /* width: 0.1px;
@@ -326,42 +277,56 @@ input[type="file"] {
   height: 80px;
 }
 
-.slider #list{
-  display:flex;
+.slider #list {
+  display: flex;
   padding: 0;
   width: 400%;
   animation: cambio 20s infinite alternate linear;
   /* animation-timing-function: ease-in; */
 }
 
-.slider button{
+.slider button {
   /* width: 100%; */
   list-style: none;
 }
 
-.slider img{
+.slider img {
   width: 100px;
   height: 50px;
   /* height:100px; */
 }
 
 @keyframes cambio {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-
-  75% {margin-left: -300%;}
-  100% {margin-left: -300%;}
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
 #modal-aceptar {
   display: none;
 }
+
 #modal-comentario {
   display: none;
 }
@@ -409,11 +374,12 @@ input[type="file"] {
   text-align: left;
   color: rgba(0, 0, 0, 0.38);
 }
+
 /*--- ARREGLOS EN EL MODAL ---*/
 
 .modal-content {
   position: fixe;
-  top: 450px;
+  top: 250px;
    
 }
 
