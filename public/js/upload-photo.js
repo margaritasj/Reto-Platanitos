@@ -95,20 +95,13 @@
       var datos = snapshot.val();
        var result = "";
       for (var key in datos) {
-        // console.log(datos[key].nombre)
-
-        result += ' <button  type="button" data-comentario="'+datos[key].nombre+'" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/><p>"'+datos[key].nombre+'"</p></button>';
+        result += ' <button type="button" data-toggle="modal" data-url="'+datos[key].url+'"  class=" bg-white"><img class="" src="' + datos[key].url + '"/> <p class="font-italic fs-10">"'+datos[key].nombre+'"</p> </button>';
       }
-      document.getElementById('list').innerHTML = result; 
-      $('button img').on('click',function(e){
-        console.log(e.target)
-      })
-
-         
+      document.getElementById('list').innerHTML = result;    
+      
     })   
   }
 
- 
   
 
   function createNode(nameImage, url) {
