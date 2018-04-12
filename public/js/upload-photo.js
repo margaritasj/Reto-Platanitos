@@ -80,6 +80,7 @@
       document.getElementById("modal-photo").style.display = 'block';
       document.getElementById("modal-aceptar").style.display = 'none';
       document.getElementById("modal-subio").style.display = 'none';
+      $('#list').preppend(result);
     });
   }
 
@@ -90,7 +91,8 @@
       for (var key in datos) {
         result += ' <button type="button" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/> </button>';
       }
-      document.getElementById('list').innerHTML = result;    
+      document.getElementById('list').innerHTML = result; 
+         
     })   
   }
   
