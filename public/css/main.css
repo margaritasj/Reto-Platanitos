@@ -191,8 +191,71 @@ nav {
   }
   .img-output{
      width: 100px;
-     height: 80px;
+     height: 100px;
   }
+
+  /* slider estilos */
+  .item {
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.item span{
+    font-size: 12px;
+}
+.carousel-inner {
+    outline: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel.slide {
+    outline: 1px solid blue;
+}
+.cont-slider {
+    margin-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-bottom: 10%;
+}
+.carousel-item {
+    outline:  1px solid red;
+    width: 50%;
+    float: left;
+}
+.carouselExampleControls {
+    outline: 1px solid blue;
+}
+
+.slick-next::before {
+    content: url('../assets/img/next.svg');
+    color: rgb(224, 170, 0);
+}
+.slick-prev:before {
+    content: url('../assets/img/previous.svg');
+    color: rgb(224, 170, 0);
+    /*background: rgb(224, 170, 0);*/
+}
+.slider.item {
+    background: tomato;
+}
+.item img{
+  margin-left: 15%;
+}
+ 
+
+.sli-item {
+    display: inline-block;
+    width: 50%;
+}
+
+.slider #list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 
 #modal-aceptar {
