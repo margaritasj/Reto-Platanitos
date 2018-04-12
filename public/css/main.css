@@ -94,6 +94,7 @@ nav {
   display: inline-block;
 }
 
+/* Iconos */
 .icon-nav {
   width: 34px;
   height: 34px;
@@ -106,6 +107,7 @@ nav {
   height: 28px;
   object-fit: contain;
 }
+/**/
 
 .platanitoscom-logotipo {
   width: 132px;
@@ -113,60 +115,9 @@ nav {
   object-fit: contain;
 }
 
-/* .h3 {
-  width: 101px;
-  height: 19px;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
-} */
 
-/* .h4 {
-  width: 145px;
-  height: 18px;
-  font-size: 13px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #7e7e7e;
-}
 
-.span {
-  width: 64px;
-  height: 17px;
-  font-size: 12px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #353535;
-  margin: 0;
-} */
-
-/* .des-span {
-  width: 110px;
-  height: 14px;
-  font-size: 10px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -0.2px;
-  text-align: right;
-  color: #7e7e7e;
-} */
-
-.price {
+/* .price {
   width: 79px;
   height: 24px;
   font-size: 18px;
@@ -177,7 +128,7 @@ nav {
   letter-spacing: normal;
   text-align: right;
   color: #55b849;
-}
+} */
 
 .item {
   width: 31px;
