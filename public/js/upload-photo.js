@@ -26,7 +26,17 @@
     var image = fileImage.files[0];
     document.getElementById("modal-photo").style.display = 'none';
     document.getElementById("modal-aceptar").style.display = 'block';
-    document.getElementById("aceptar").addEventListener("click", function () {
+    document.getElementById("modal-comentario").style.display = 'none';
+    document.getElementById("comentar").addEventListener("click", function () {
+      
+      var textArea = document.getElementById("textArea").value;
+      localStorage.setItem("text", textArea);
+
+    console.log(document.getElementById("textArea").value);
+      document.getElementById("modal-photo").style.display = 'none';
+      document.getElementById("modal-aceptar").style.display = 'none';
+      document.getElementById("modal-comentario").style.display = 'none';
+      document.getElementById("modal-subio").style.display = 'block';
       var uploadTask = storageRef.child(image.name).put(image)
       uploadTask.on('state_changed',
         function (snapshot) {},
@@ -39,6 +49,40 @@
         });
     });
 
+    document.getElementById("aceptar").addEventListener("click", function () {
+      var datotext = localStorage.getItem("text");
+      document.getElementById("coment-photo").innerHTML = datotext; 
+      
+
+      document.getElementById("modal-comentario").style.display = 'block';
+      document.getElementById("modal-photo").style.display = 'none';
+      document.getElementById("modal-aceptar").style.display = 'none';
+    });
+    
+    document.getElementById("cancelar").addEventListener("click", function () {
+      document.getElementById("modal-photo").style.display = 'block';
+      document.getElementById("modal-aceptar").style.display = 'none';
+    });
+
+    document.getElementById("close").addEventListener("click", function () {
+      document.getElementById("modal-photo").style.display = 'block';
+      document.getElementById("modal-aceptar").style.display = 'none';
+    });
+
+    document.getElementById("close-subio").addEventListener("click", function () {
+      document.getElementById("modal-comentario").style.display = 'none';
+      document.getElementById("modal-photo").style.display = 'block';
+      document.getElementById("modal-aceptar").style.display = 'none';
+    });
+
+    document.getElementById("aceptar-subio").addEventListener("click", function () {
+      document.getElementById("modal-comentario").style.display = 'none';
+      document.getElementById("modal-photo").style.display = 'block';
+      document.getElementById("modal-aceptar").style.display = 'none';
+      document.getElementById("modal-subio").style.display = 'none';
+    });
+
+
 
   }
 
@@ -48,11 +92,12 @@
       // console.log(datos)
       var result = "";
       for (var key in datos) {
-        result += '<img class="img-output img-thumbnail"src="' + datos[key].url + '"/>';
+        result += ' <button type="button" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/> </button>';
       }
       document.getElementById('list').innerHTML = result;
+      
     })
-
+    
   }
 
 
