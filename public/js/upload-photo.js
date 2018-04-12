@@ -1,4 +1,5 @@
 (function () {
+  
   var config = {
     apiKey: "AIzaSyCLoNdkDeyiO09zyiEpvVOubXExNSE-A5Y",
     authDomain: "platanitos-e4b00.firebaseapp.com",
@@ -15,15 +16,19 @@
   // imagenesFBRef
 
   function initialize() {
+    
     fileImage = document.getElementById('files');
     fileImage.addEventListener('change', uploadImage, false);
     storageRef = firebase.storage().ref().child('imagenes');
     imagesReference = firebase.database().ref().child('imagenes')
     showImages();
+    
   }
 
   function uploadImage() {
+    
     var image = fileImage.files[0];
+    document.getElementById("modal-login").style.display = 'none';
     document.getElementById("modal-photo").style.display = 'none';
     document.getElementById("modal-aceptar").style.display = 'block';
     document.getElementById("modal-comentario").style.display = 'none';
@@ -37,7 +42,7 @@
       document.getElementById("modal-aceptar").style.display = 'none';
       document.getElementById("modal-comentario").style.display = 'none';
       document.getElementById("modal-subio").style.display = 'block';
-      var uploadTask = storageRef.child(image.name).put(image)
+      var uploadTask = storageRef.child(textArea).put(image)
       uploadTask.on('state_changed',
         function (snapshot) {},
         function (error) {
@@ -45,9 +50,11 @@
         },
         function () {
           var downloadURL = uploadTask.snapshot.downloadURL;
-          createNode(image.name, downloadURL);
+          createNode(textArea, downloadURL);
         });
     });
+
+    
 
     document.getElementById("aceptar").addEventListener("click", function () {
       var datotext = localStorage.getItem("text");
@@ -80,21 +87,28 @@
       document.getElementById("modal-photo").style.display = 'block';
       document.getElementById("modal-aceptar").style.display = 'none';
       document.getElementById("modal-subio").style.display = 'none';
-      $('#list').preppend(result);
     });
   }
-
+  
   function showImages() {
     imagesReference.on('value', function (snapshot) {
       var datos = snapshot.val();
        var result = "";
       for (var key in datos) {
-        result += ' <button type="button" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/> </button>';
+        // console.log(datos[key].nombre)
+
+        result += ' <button  type="button" data-comentario="'+datos[key].nombre+'" data-toggle="modal" data-target="#exampleModal2" ><img class="img-output img-thumbnail"src="' + datos[key].url + '"/><p>"'+datos[key].nombre+'"</p></button>';
       }
       document.getElementById('list').innerHTML = result; 
+      $('button img').on('click',function(e){
+        console.log(e.target)
+      })
+
          
     })   
   }
+
+ 
   
 
   function createNode(nameImage, url) {
@@ -109,7 +123,12 @@
 })()
 
 
+document.getElementById("mostrar").addEventListener("click", function () {
 
+  
+  document.getElementById("modal-login").style.display = 'none';
+  document.getElementById("modal-photo").style.display = 'block';
+});
 
 
     

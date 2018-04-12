@@ -318,6 +318,10 @@ input[type="file"] {
   }
 }
 
+#modal-photo {
+  display: none;
+}
+
 #modal-aceptar {
   display: none;
 }
@@ -342,6 +346,12 @@ input[type="file"] {
 .area-coment {
   border-bottom: 2px solid #55b849;
   margin-bottom: 56.9px;
+}
+/*-- BOTON MODAL LOGUIN --*/
+
+.boton {
+  background: #55b849;
+  color: #fff;
 }
 
 .textArea {
@@ -374,7 +384,7 @@ input[type="file"] {
 
 .modal-content {
   position: fixe;
-  top: 250px;
+  top: 50px;
    
 }
 
@@ -383,3 +393,9 @@ input[type="file"] {
 }
 
 /*----- FIN DE MODOL --*/
+.img-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
